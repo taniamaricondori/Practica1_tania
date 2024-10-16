@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias - PIL ANDINA</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='noticias.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon (4).ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ url_for('static', filename='favicon (4).ico') }}" type="image/x-icon">
+</head>
+<body>
+    <img src="{{ url_for('static', filename='imagenes/fondopil.jpg') }}" alt="Imagen de Fondo" class="full-size-image">
+
+    <header class="container">
+        <img src="{{ url_for('static', filename='imagenes/logo1.png') }}" alt="Logo" class="logo">
+        <div>
+            <h1><b>PIL</b> ANDINA S.A.</h1>
+            <br>
+            <nav class="nav-container">
+                <ul class="nav-list">
+                    <li><a href="{{ url_for('index') }}"><b>INICIO</b></a></li>
+                    <li><a href="{{ url_for('quienes_somos') }}"><b>QUIÉNES SOMOS</b></a></li>
+                    <li><a href="{{ url_for('servicios') }}"><b>SERVICIOS</b></a></li>
+                    <li><a href="{{ url_for('noticias') }}"><b>NOTICIAS</b></a></li>
+                    <li><a href="{{ url_for('contacto') }}"><b>CONTACTO</b></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Últimas Noticias</h2>
+        
+        <section class="news-item">
+            <img src="{{ url_for('static', filename='imagenes/noticia1.jpg') }}" alt="Noticia 1" class="news-image">
+            <div>
+                <h3>PIL Andina expresa preocupación por desequilibrio del sector tras subida en el precio de la leche cruda</h3>
+                <p>La empresa láctea PIL Andina dio a conocer su preocupación por la decisión del Gobierno de modificar de forma 
+                    considerable la banda de precios de la leche cruda que los productores venden a la industria, sin que haya 
+                    posibilidad de compensar el impacto de la medida, ya que el precio de venta al público de la leche blanca se 
+                    mantiene fijo desde hace 10 años.</p>
+            </div>
+        </section>
+
+        <section class="news-item">
+            <img src="{{ url_for('static', filename='imagenes/noticia2.jpg') }}" alt="Noticia 2" class="news-image">
+            <div>
+                <h3>PIL dejó de vender 81 MM de litros leche entre 2020 y 2021</h3>
+                <p>La situación afecta a 5 mil productores, quienes bloquearon ayer la carretera Cochabamba-Oruro, a la altura de 
+                    Parotani, en rechazo a la determinación de la PIL de reducir sus volúmenes de retiro en fines de semana.</p>
+            </div>
+        </section>
+
+        <section class="news-item">
+            <img src="{{ url_for('static', filename='imagenes/noticia3.jpg') }}" alt="Noticia 3" class="news-image">
+            <div>
+                <h3>PIL baja ventas por el contrabando y reporta un stock de 3.000 t de leche</h3>
+                <p>La afectación en las ventas de la industria PIL a raíz del ingreso de productos 
+                    lácteos de contrabando va en aumento con el paso de los días. La empresa nacional 
+                    reporta más de 3 mil toneladas de leche en polvo acumuladas en todo el país que no se 
+                    puede comercializar, puesto que debe competir con al menos cinco marcas extranjeras con menor precio.
+
+                    En marzo, PIL indicó que la venta de leche en polvo cayó en más de 50 por ciento, 
+                    mientras que la comercialización de sus productos lácteos a programas sociales disminuyó 
+                    en 62 por ciento por ciento.
+                    
+                    Debido a esta reducción de demanda, PIL intentó suspender la recolección de leche los 
+                    días domingos, pero, ante la presión de los productores, la empresa aceptó continuar con la recolección 
+                    a menor precio.</p>
+            </div>
+        </section>
+
+        <section class="news-item">
+            <img src="{{ url_for('static', filename='imagenes/noticia4.jpg') }}" alt="Noticia 4" class="news-image">
+            <div>
+                <h3>PIL instala cámaras de desinfección con materiales reciclados y envasa alcohol</h3>
+                <p>PIL Andina S.A. instaló cámaras de desinfección que fueron construidas por su personal
+                    con material reciclado con el propósito de evitar la propagación de la Covid-19 en la población.
+
+                    “Se han diseñado y fabricado túneles de desinfección que son utilizados como una medida efectiva 
+                    de bioseguridad para el personal antes de ingresar a su fuente laboral”, indicó Rodrigo Díaz Pérez,
+                    gerente de Producción de PIL en un comunicado.
+                    
+                    El gerente general de PIL, Daniel Aguilar, señaló que la empresa está reforzando las medidas de
+                    bioseguridad necesarias para cuidar no sólo a sus colaboradores, sino también a sus consumidores. </p>
+            </div>
+        </section>
+
+        <div class="cta-buttons">
+            
+            <a href="{{ url_for('contacto') }}" class="cta-button">Contáctanos</a>
+        </div>
+
+    </main>
+
+    <div class="social-buttons">
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="{{ url_for('static', filename='imagenes/facebook.png') }}" alt="Facebook" class="social-icon">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img src="{{ url_for('static', filename='imagenes/twitter.png') }}" alt="Twitter" class="social-icon">
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="{{ url_for('static', filename='imagenes/instagram.png') }}" alt="Instagram" class="social-icon">
+        </a>
+        <a href="https://www.linkedin.com/in/" target="_blank">
+            <img src="{{ url_for('static', filename='imagenes/linkedin.png') }}" alt="LinkedIn" class="social-icon">
+        </a>
+        <a href="https://www.youtube.com" target="_blank">
+            <img src="{{ url_for('static', filename='imagenes/youtube.png') }}" alt="YouTube" class="social-icon">
+        </a>
+        <a href="https://www.tiktok.com" target="_blank">
+            <img src="{{ url_for('static', filename='imagenes/tik-tok.png') }}" alt="TikTok" class="social-icon">
+        </a>
+        <a href="https://wa.me/64152670" target="_blank">
+            <img src="{{ url_for('static', filename='imagenes/whatsapp.png') }}" alt="WhatsApp" class="social-icon">
+        </a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 PIL ANDINA S.A. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

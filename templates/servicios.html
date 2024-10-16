@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - PIL ANDINA</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='servicios.css') }}"> <!-- Enlace al CSS externo -->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon (4).ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ url_for('static', filename='favicon (4).ico') }}" type="image/x-icon">
+</head>
+<body>
+    <img src="{{ url_for('static', filename='imagenes/fondopil.jpg') }}" alt="Imagen de Fondo" class="full-size-image">
+
+    <header class="container">
+        <img src="{{ url_for('static', filename='imagenes/logo1.png') }}" alt="Logo" class="logo">
+        <div>
+            <h1><b>PIL</b> ANDINA S.A.</h1>
+            <br>
+            <nav class="nav-container">
+                <ul class="nav-list">
+                    <li><a href="{{ url_for('index') }}"><b>INICIO</b></a></li>
+                    <li><a href="{{ url_for('quienes_somos') }}"><b>QUIÉNES SOMOS</b></a></li>
+                    <li><a href="{{ url_for('servicios') }}"><b>SERVICIOS</b></a></li>
+                    <li><a href="{{ url_for('noticias') }}"><b>NOTICIAS</b></a></li>
+                    <li><a href="{{ url_for('contacto') }}"><b>CONTACTO</b></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="service">
+            <img src="{{ url_for('static', filename='imagenes/produccion.jpg') }}" alt="Producción de Lácteos" class="service-image">
+            <div>
+                <h2>Producción de Lácteos</h2>
+                <p>En PIL ANDINA, producimos una amplia gama de productos lácteos de alta calidad, garantizando frescura y nutrición.</p>
+            </div>
+        </section>
+
+        <section class="service">
+            <img src="{{ url_for('static', filename='imagenes/distribucion.jpg') }}" alt="Distribución" class="service-image">
+            <div>
+                <h2>Distribución</h2>
+                <p>Nuestra red de distribución asegura que nuestros productos lleguen frescos y a tiempo a cada uno de nuestros clientes.</p>
+            </div>
+        </section>
+
+        <section class="service">
+            <img src="{{ url_for('static', filename='imagenes/control_calidad.jpg') }}" alt="Control de Calidad" class="service-image">
+            <div>
+                <h2>Control de Calidad</h2>
+                <p>Contamos con rigurosos estándares de control de calidad para asegurar que nuestros productos cumplan con las expectativas de nuestros clientes.</p>
+            </div>
+        </section>
+
+        <section class="service">
+            <img src="{{ url_for('static', filename='imagenes/nuevos_productos.jpg') }}" alt="Desarrollo de Nuevos Productos" class="service-image">
+            <div>
+                <h2>Desarrollo de Nuevos Productos</h2>
+                <p>Estamos comprometidos con la innovación, desarrollando continuamente nuevos productos que satisfacen las necesidades de nuestros consumidores.</p>
+            </div>
+        </section>
+    </main>
+
+    <div class="social-buttons">
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="{{ url_for('static', filename='imagenes/facebook.png') }}" alt="Facebook" class="social-icon">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img src="{{ url_for('static', filename='imagenes/twitter.png') }}" alt="Twitter" class="social-icon">
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="{{ url_for('static', filename='imagenes/instagram.png') }}" alt="Instagram" class="social-icon">
+        </a>
+        <a href="https://www.linkedin.com/in/" target="_blank">
+            <img src="{{ url_for('static', filename='imagenes/linkedin.png') }}" alt="LinkedIn" class="social-icon">
+        </a>
+        <a href="https://www.youtube.com" target="_blank">
+            <img src="{{ url_for('static', filename='imagenes/youtube.png') }}" alt="YouTube" class="social-icon">
+        </a>
+        <a href="https://www.tiktok.com" target="_blank">
+            <img src="{{ url_for('static', filename='imagenes/tik-tok.png') }}" alt="TikTok" class="social-icon">
+        </a>
+        <a href="https://wa.me/64152670" target="_blank">
+            <img src="{{ url_for('static', filename='imagenes/whatsapp.png') }}" alt="WhatsApp" class="social-icon">
+        </a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 PIL ANDINA S.A. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
+

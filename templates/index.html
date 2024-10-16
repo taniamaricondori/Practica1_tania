@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIL ANDINA</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon (4).ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ url_for('static', filename='favicon (4).ico') }}" type="image/x-icon"> 
+
+</head>
+
+<body>
+<img src="{{ url_for('static', filename='imagenes/fondopil.jpg') }}" alt="Imagen a Tamaño Completo" class="full-size-image">
+
+<header class="container">
+    <img src="{{ url_for('static', filename='imagenes/logo1.png') }}" alt="Logo" class="logo">
+    <div>
+        <h1><b>PIL</b> ANDINA S.A.</b></h1>
+        <br>
+        
+        <nav class="nav-container">
+            <ul class="nav-list">
+                <li><a href="{{ url_for('index') }}"><b>INICIO</b></a></li>
+                <li><a href="{{ url_for('quienes_somos') }}"><b>QUIÉNES SOMOS</b></a></li>
+                <li><a href="{{ url_for('servicios') }}"><b>SERVICIOS</b></a></li>
+                <li><a href="{{ url_for('noticias') }}"><b>NOTICIAS</b></a></li>
+                <li><a href="{{ url_for('contacto') }}"><b>CONTACTO</b></a></li>
+            </ul>
+        </nav>
+        
+    </div>
+</header>
+
+<main class="container">
+    <h2>Bienvenido a Pil Andina</h2>
+    <p>PIL ANDINA es una empresa líder en la producción y comercialización de productos lácteos de la más alta calidad. 
+        Nos dedicamos a brindar a nuestros clientes leche fresca, yogures, quesos y otros derivados lácteos, asegurando 
+        siempre la frescura y los estándares más exigentes de calidad.</p>
+    <section class="products">
+        <div class="product">
+            <img src="{{ url_for('static', filename='imagenes/leche.png') }}" alt="Leche Pil">
+            <div class="product-name">Leche Pil</div>
+        </div>
+        <div class="product">
+            <img src="{{ url_for('static', filename='imagenes/leche_instantanea.png') }}" alt="Leche Instantanea Pil">
+            <div class="product-name">Leche Instantanea Pil</div>
+        </div>
+        <div class="product">
+            <img src="{{ url_for('static', filename='imagenes/leche_chocolatada.png') }}" alt="Leche Chocolatada Pil">
+            <div class="product-name">Leche Chocolatada Pil</div>
+        </div>
+        <div class="product">
+            <img src="{{ url_for('static', filename='imagenes/crema_leche.png') }}" alt="Leche de Crema Pil">
+            <div class="product-name">Leche de Crema Pil</div>
+        </div>
+        <div class="product">
+            <img src="{{ url_for('static', filename='imagenes/yogurt.jpg') }}" alt="Yogurt Pil">
+            <div class="product-name">Yogurt Pil</div>
+        </div>
+        <div class="product">
+            <img src="{{ url_for('static', filename='imagenes/dulce_leche.png') }}" alt="Dulce de Leche Pil">
+            <div class="product-name">Dulce de Leche Pil</div>
+        </div>
+        <div class="product">
+            <img src="{{ url_for('static', filename='imagenes/matequilla.png') }}" alt="Matequilla Pil">
+            <div class="product-name">Mantequilla Pil</div>
+        </div>
+        <div class="product">
+            <img src="{{ url_for('static', filename='imagenes/gelatina.jpg') }}" alt="Gelatina Pil">
+            <div class="product-name">Gelatina Pil</div>
+        </div>
+        <div class="product">
+            <img src="{{ url_for('static', filename='imagenes/bebida_pura_vida.jpg') }}" alt="Pura Vida Pil">
+            <div class="product-name">Pura Vida Pil</div>
+        </div>
+        <div class="product">
+            <img src="{{ url_for('static', filename='imagenes/pilfrut.png') }}" alt="Pilfrut Pil">
+            <div class="product-name">Pilfrut Pil</div>
+        </div>
+        <div class="product">
+            <img src="{{ url_for('static', filename='imagenes/paneton.jpg') }}" alt="Paneton Pil">
+            <div class="product-name">Paneton Pil</div>
+        </div>
+        <div class="product">
+            <img src="{{ url_for('static', filename='imagenes/soy.jpg') }}" alt="Soy Pil">
+            <div class="product-name">Soy Pil</div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>Testimonios</h2>
+        <p>"Pil Andina es sinónimo de calidad y frescura." - Clemente S.</p>
+        <p>"Pil Andina es sinónimo de calidad y frescura. No hay mejor opción para mi familia." - Carla G.</p>
+        <p>"Desde que probé los productos de Pil Andina, no he vuelto a comprar otra marca." - Juan P.</p>
+    </section>
+
+    <section class="advantages">
+        <h2>Ventajas de Nuestros Productos</h2>
+        <p>- Productos frescos y de alta calidad, disponibles en todo el país.</p>
+        <p>- Compromiso con la sostenibilidad y el bienestar de nuestros productores.</p>
+        <p>- Variedad de productos para satisfacer todos los gustos y necesidades.</p>
+    </section>
+
+    <div class="cta-buttons">
+        <a href="{{ url_for('servicios') }}" class="cta-button">Ver Servicios</a>
+        <a href="{{ url_for('contacto') }}" class="cta-button">Contáctanos</a>
+    </div>
+</main>
+
+
+<div class="social-buttons">
+    <a href="https://www.facebook.com" target="_blank">
+        <img src="{{ url_for('static', filename='imagenes/facebook.png') }}" alt="Facebook" class="social-icon">
+    </a>
+    <a href="https://twitter.com" target="_blank">
+        <img src="{{ url_for('static', filename='imagenes/twitter.png') }}" alt="Twitter" class="social-icon">
+    </a>
+    <a href="https://www.instagram.com" target="_blank">
+        <img src="{{ url_for('static', filename='imagenes/instagram.png') }}" alt="Instagram" class="social-icon">
+    </a>
+    <a href="https://www.linkedin.com/in/" target="_blank">
+        <img src="{{ url_for('static', filename='imagenes/linkedin.png') }}" alt="LinkedIn" class="social-icon">
+    </a>
+    <a href="https://www.youtube.com" target="_blank">
+        <img src="{{ url_for('static', filename='imagenes/youtube.png') }}" alt="YouTube" class="social-icon">
+    </a>
+    <a href="https://www.tiktok.com" target="_blank">
+        <img src="{{ url_for('static', filename='imagenes/tik-tok.png') }}" alt="TikTok" class="social-icon">
+    </a>
+    <a href="https://wa.me/64152670" target="_blank">
+        <img src="{{ url_for('static', filename='imagenes/whatsapp.png') }}" alt="WhatsApp" class="social-icon">
+    </a>
+</div>
+
+<footer>
+    <p>&copy; 2024 PIL ANDINA S.A. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
